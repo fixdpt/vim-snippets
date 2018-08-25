@@ -39,13 +39,13 @@ snippet j.u
 ##
 ## Class
 snippet cl
-	class ${1:`vim_snippets#Filename("$1", "untitled")`} ${0}
+	final class ${1:`vim_snippets#Filename("$1", "untitled")`} ${0}
 snippet pcl
-	public class ${1:`vim_snippets#Filename("$1", "untitled")`} ${0}
+	public final class ${1:`vim_snippets#Filename("$1", "untitled")`} ${0}
 snippet in
 	interface ${1:`vim_snippets#Filename("$1", "untitled")`} ${2:extends Parent}
 snippet tc
-	public class ${1:`vim_snippets#Filename("$1")`} extends ${0:TestCase}
+	public final class ${1:`vim_snippets#Filename("$1")`} extends ${0:TestCase}
 ##
 ## Class Enhancements
 snippet ext
@@ -89,7 +89,7 @@ snippet m
 ##
 ## Create a Variable
 snippet v
-	${1:String} ${2:var}${3: = null}${4};
+	final ${1:String} ${2:var}${3: = null}${4};
 ##
 ## Declaration for ArrayList
 snippet d.al
